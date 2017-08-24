@@ -22,7 +22,7 @@ function AppCtrlFunc($scope, $http) {
         });
     };
 
-    $scope.remove = function (id) {
+    $scope.delete = function (id) {
         console.log(id);
         $http.delete('/contactlist/' + id).then(function (response) {
             refresh();
